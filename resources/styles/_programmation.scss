@@ -1,0 +1,8 @@
+.artist_description-container {
+    @apply absolute flex-col justify-end inset-2 text-sm bg-gray-900 p-5 hidden;
+}
+
+input[type="checkbox"]:checked + .artist_description-container, 
+label:focus-within + input:checked + .artist_description-container {
+    @apply flex;
+}

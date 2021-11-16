@@ -1,0 +1,16 @@
+/*!
+ * Theme Name: Paka Festival
+ * Description: Thème Wordpress pour Paka Festival - Festival à la Trinité sur Mer
+ * Version: 1.0.0
+ * Author: Elliot Collin <elliot.cln@gmail.com>
+ */
+
+ @import "tailwindcss/base";
+ @import "tailwindcss/components";
+ @import "tailwindcss/utilities";
+
+ @import 'reset';
+ @import 'header';
+ @import 'prose';
+ @import 'programmation';
+ @import 'footer';

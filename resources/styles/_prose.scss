@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-title leading-tight font-light #{!important};
+}
+
+h1 {
+    @apply text-4xl lg:text-5xl;
+}
+h2 {
+    @apply text-3xl lg:text-4xl;
+}
+h3 {
+    @apply text-xl lg:text-2xl;
+}
+
+a {
+    @apply focus:underline hover:underline;
+}
+
+.content {
+    @apply lg:text-lg;
+
+    h1:not(:first-child),
+    h2:not(:first-child) {
+        @apply mt-8;
+    }
+    a {
+        @apply underline;
+    }
+}
+
+.content > p:not(:first-child),
+.content *:not(.woocommerce) p:not(:first-child) {
+    @apply mt-4;
+}

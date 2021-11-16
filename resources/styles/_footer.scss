@@ -1,0 +1,6 @@
+.footer-navigation {
+    @apply xl:text-lg text-center lg:text-left;
+    a {
+        @apply text-white hover:text-green;
+    }
+}

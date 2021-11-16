@@ -1,0 +1,36 @@
+html, body {
+    @apply font-display text-dark bg-light;
+}
+
+.alert {
+    a {
+        @apply text-yellow;
+        &::after {
+            content: '⟶';
+            @apply ml-1;
+        }
+    }
+}
+
+.breadcrumb {
+    @apply text-xs lg:text-base flex flex-wrap items-center justify-center font-bold;
+
+    a {
+        @apply opacity-60;
+    }
+
+    li:not(:last-child):after {
+        content: '/';
+        @apply inline-block mx-2 opacity-60;
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.event {
+    background-image: url(assets/images/topography.svg);
+    @apply bg-opacity-40;
+}
