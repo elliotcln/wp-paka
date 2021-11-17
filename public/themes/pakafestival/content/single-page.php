@@ -5,7 +5,7 @@
     </header>
     <?php if (has_post_thumbnail()) : ?>
         <figure class="mx-auto max-w-5xl mb-4 mt-4 lg:mt-8">
-            <?= the_post_thumbnail('full', ['class' => '']); ?>
+            <?= the_post_thumbnail('full', ['class' => 'w-full rounded-2xl']); ?>
             <?php if (get_the_post_thumbnail_caption()) : ?>
                 <figcaption class="text-center italic text-xs lg:text-sm opacity-60 pt-3"><?= get_the_post_thumbnail_caption(); ?></figcaption>
             <?php endif; ?>

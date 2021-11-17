@@ -109,6 +109,7 @@ input[type="checkbox"]:checked + #main-navigation {
                 }
             }
 
+            input[type="checkbox"]:checked + .sub-menu,
             &:hover .sub-menu,
             &:focus-within .sub-menu {
                 @apply block h-auto overflow-auto border-3 p-2 border-dark;

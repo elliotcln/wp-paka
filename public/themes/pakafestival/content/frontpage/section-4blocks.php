@@ -1,32 +1,56 @@
 <section class="bg-white py-8 lg:py-16">
     <div class="container grid md:grid-cols-2 gap-6 lg:gap-10">
         <div class="py-4 lg:py-8 px-7 lg:px-14">
-            <svg aria-hidden="true" class="icon w-20 h-20 text-green">
-                <use xlink:href="#plane-ticket" />
-            </svg>
-            <h3 class="font-bold text-2xl mt-4">Quoi ?</h3>
-            <p class="mt-2 text-gray-500">Un voyage en musique autour du monde pour les grands et les petits. Un festival hors du temps rythmé par une programmation éclectique : plus de 20 artistes et DJ se partageront les deux scènes du PAKA Festival.</p>
+            <?php if (get_field('hp_block-1_icon')) : ?>
+                <img class="h-20" src="<?= wp_get_attachment_url(get_field('hp_block-1_icon')); ?>" alt="">
+            <?php else : ?>
+                <svg aria-hidden="true" class="icon w-20 h-20 text-green">
+                    <use xlink:href="#plane-ticket" />
+                </svg>
+            <?php endif; ?>
+            <h3 class="font-bold text-2xl mt-4"><?= get_field('hp_block-1_titre'); ?></h3>
+            <?php if (get_field('hp_block-1_content')) : ?>
+                <p class="mt-2 text-gray-500"><?= get_field('hp_block-1_content'); ?></p>
+            <?php endif; ?>
         </div>
         <div class="py-4 lg:py-8 px-7 lg:px-14">
-            <svg aria-hidden="true" class="icon w-20 h-20 text-green">
-                <use xlink:href="#music-notes" />
-            </svg>
-            <h3 class="font-bold text-2xl mt-4">Musique ?</h3>
-            <p class="mt-2 text-gray-500">Une fusion électro-acoustique où se mêlent et se mixent les meilleurs sonorités des quatre coin du monde : reggae, house, rock, electro, synthwave ...</p>
+            <?php if (get_field('hp_block-2_icon')) : ?>
+                <img class="h-20" src="<?= wp_get_attachment_url(get_field('hp_block-2_icon')); ?>" alt="">
+            <?php else : ?>
+                <svg aria-hidden="true" class="icon w-20 h-20 text-green">
+                    <use xlink:href="#music-notes" />
+                </svg>
+            <?php endif; ?>
+            <h3 class="font-bold text-2xl mt-4"><?= get_field('hp_block-2_titre'); ?></h3>
+            <?php if (get_field('hp_block-2_content')) : ?>
+                <p class="mt-2 text-gray-500"><?= get_field('hp_block-2_content'); ?></p>
+            <?php endif; ?>
         </div>
         <div class="py-4 lg:py-8 px-7 lg:px-14">
-            <svg aria-hidden="true" class="icon w-20 h-20 text-green">
-                <use xlink:href="#sunrise" />
-            </svg>
-            <h3 class="font-bold text-2xl mt-4">Quand ?</h3>
-            <p class="mt-2 text-gray-500">L’été 2022 battra son plein en juillet avec deux nouvelles journées magiques ! Venez vous ressourcer et déconnecter le temps d’un week-end.</p>
+            <?php if (get_field('hp_block-3_icon')) : ?>
+                <img class="h-20" src="<?= wp_get_attachment_url(get_field('hp_block-3_icon')); ?>" alt="">
+            <?php else : ?>
+                <svg aria-hidden="true" class="icon w-20 h-20 text-green">
+                    <use xlink:href="#sunrise" />
+                </svg>
+            <?php endif; ?>
+            <h3 class="font-bold text-2xl mt-4"><?= get_field('hp_block-3_titre'); ?></h3>
+            <?php if (get_field('hp_block-3_content')) : ?>
+                <p class="mt-2 text-gray-500"><?= get_field('hp_block-3_content'); ?></p>
+            <?php endif; ?>
         </div>
         <div class="py-4 lg:py-8 px-7 lg:px-14">
-            <svg aria-hidden="true" class="icon w-20 h-20 text-green">
-                <use xlink:href="#treasure-map" />
-            </svg>
-            <h3 class="font-bold text-2xl mt-4">Où ?</h3>
-            <p class="mt-2 text-gray-500">Dans un paradis perdu, au coeur du Morbihan (56), PAKA Festival vous donne rendez-vous entre la plage et la forêt au Bois du Poulbert.</p>
+            <?php if (get_field('hp_block-4_icon')) : ?>
+                <img class="h-20" src="<?= wp_get_attachment_url(get_field('hp_block-4_icon')); ?>" alt="">
+            <?php else : ?>
+                <svg aria-hidden="true" class="icon w-20 h-20 text-green">
+                    <use xlink:href="#treasure-map" />
+                </svg>
+            <?php endif; ?>
+            <h3 class="font-bold text-2xl mt-4"><?= get_field('hp_block-4_titre'); ?></h3>
+            <?php if (get_field('hp_block-4_content')) : ?>
+                <p class="mt-2 text-gray-500"><?= get_field('hp_block-4_content'); ?></p>
+            <?php endif; ?>
         </div>
     </div>
 </section>

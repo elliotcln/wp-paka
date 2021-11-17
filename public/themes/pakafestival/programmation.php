@@ -81,20 +81,4 @@ get_header(); ?>
     </div>
 </main>
 
-<!-- <main role="content" class="relative" id="main-content">
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="container py-12">
-                <article class="">
-                    <header class="relative">
-                        <?php get_breadcrumb(null, get_the_ID()); ?>
-                        <div class=" wiggled h-28 w-28 absolute transform right-0 top-0 -translate-y-1/2 translate-x-1/2 opacity-40"></div>
-                        <h1 class=" text-transparent bg-clip-text bg-gradient-to-tr from-yellow-300 to-red-300"><?php the_title(); ?></h1>
-                    </header>
-                    
-                </article>
-            </div>
-    <?php endwhile;
-    endif; ?>
-</main> -->
-
 <?php get_footer(); ?>
