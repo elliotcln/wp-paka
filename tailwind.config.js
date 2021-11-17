@@ -1,7 +1,6 @@
 const theme = process.env.WP_DEFAULT_THEME;
 
 module.exports = {
-  mode: 'jit',
   purge: {
     content: [
       `./public/themes/${theme}/**/*.php`,

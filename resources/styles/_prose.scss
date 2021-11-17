@@ -31,6 +31,13 @@ a {
     a {
         @apply underline;
     }
+
+    ul:not(.blocks-gallery-grid) {
+        @apply list-disc pt-4 pl-4 ml-4;
+        &:first-child {
+            @apply pt-0;
+        }
+    }
 }
 
 .content > p:not(:first-child),

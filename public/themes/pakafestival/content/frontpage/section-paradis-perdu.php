@@ -14,7 +14,7 @@ $e->programmation_link = get_field('event_programmation_link', $event_id);
 ?>
 <section class="event relative py-14 lg:py-28 lg:pt-52 -mt-12 lg:-mt-28">
     <div class="absolute right-0 top-14 bottom-14 md:hidden xl:block">
-        <img aria-hidden="true" class="h-full" src="<?= get_template_directory_uri(); ?>/assets/images/event-arrow.svg" alt="">
+        <img class="h-full" src="<?= get_template_directory_uri(); ?>/assets/images/event-arrow.svg" alt="">
     </div>
     <div class="container">
         <div class="lg:w-1/2">
