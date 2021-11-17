@@ -1,10 +1,20 @@
 const theme = process.env.WP_DEFAULT_THEME;
 
 module.exports = {
-  purge: [
-    `./public/themes/${theme}/**/*.php`,
-    `./resources/styles/**/*.scss`
-  ],
+  mode: 'jit',
+  purge: {
+    content: [
+      `./public/themes/${theme}/**/*.php`,
+      `./resources/styles/**/*.scss`,
+    ],
+    safelist: [
+      'aspect-h-1',
+      'aspect-w-1',
+      'aspect-h-9',
+      'aspect-w-16',
+      'rounded-2xl'
+    ]
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {

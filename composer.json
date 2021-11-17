@@ -21,7 +21,8 @@
         "installer-paths": {
             "public/mu-plugins/{$name}": [
                 "type:wordpress-muplugin",
-                "wpackagist-plugin/advanced-custom-fields"
+                "wpackagist-plugin/advanced-custom-fields",
+                "wpackagist-plugin/the-events-calendar"
             ],
             "public/plugins/{$name}": [
                 "type:wordpress-plugin"

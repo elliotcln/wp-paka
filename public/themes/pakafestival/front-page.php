@@ -7,14 +7,13 @@
                 <?php the_content(); ?>
             </div>
         </section>
+        <?php
+        get_template_part('content/frontpage/section', 'paradis-perdu');
+        get_template_part('content/frontpage/section', 'waiting-for');
+        get_template_part('content/frontpage/section', '4blocks');
+        // get_template_part('content/frontpage/section', 'ils-parlent-de-nous');
+        ?>
     <?php endif; ?>
-
-    <?php
-    get_template_part('content/frontpage/section', 'paradis-perdu');
-    get_template_part('content/frontpage/section', 'waiting-for');
-    get_template_part('content/frontpage/section', '4blocks');
-    // get_template_part('content/frontpage/section', 'ils-parlent-de-nous');
-    ?>
 </main>
 
 <?php get_footer(); ?>

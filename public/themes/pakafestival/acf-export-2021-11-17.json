@@ -1,0 +1,288 @@
+[
+    {
+        "key": "group_61570107df91c",
+        "title": "Artiste - Infos complémentaire",
+        "fields": [
+            {
+                "key": "field_615701164bcb0",
+                "label": "Date & Heure du show",
+                "name": "show_date",
+                "type": "date_time_picker",
+                "instructions": "Date et heure de production sur scène.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "j F Y - H:i",
+                "return_format": "j F Y - H:i",
+                "first_day": 1
+            },
+            {
+                "key": "field_6157033248317",
+                "label": "Lien vers Youtube",
+                "name": "youtube_link",
+                "type": "url",
+                "instructions": "Lien vers une vidéo ou la page Youtube de l'artiste.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_615701644bcb1",
+                "label": "Description",
+                "name": "artist_description",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "artists"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_6193b8d6d16d3",
+        "title": "Event - Lien programmation",
+        "fields": [
+            {
+                "key": "field_6193b8e2e16ff",
+                "label": "Lien de la programmation",
+                "name": "event_programmation_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "page"
+                ],
+                "taxonomy": "",
+                "allow_null": 1,
+                "allow_archives": 0,
+                "multiple": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "tribe_events"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_6193abfcdda01",
+        "title": "Homepage - Ticket",
+        "fields": [
+            {
+                "key": "field_6193ac17f0051",
+                "label": "Titre du ticket",
+                "name": "ticket_title",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6193ac3ff0052",
+                "label": "Contenu du ticket",
+                "name": "ticket_content",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6193ac55f0053",
+                "label": "Lien de la programmation",
+                "name": "ticket_programmation_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "page"
+                ],
+                "taxonomy": "",
+                "allow_null": 0,
+                "allow_archives": 0,
+                "multiple": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                },
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_616d43c0b4086",
+        "title": "Homepage - Blocks",
+        "fields": [
+            {
+                "key": "field_616d43c6e289f",
+                "label": "Evenement principal",
+                "name": "main_event",
+                "type": "relationship",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "tribe_events"
+                ],
+                "taxonomy": "",
+                "filters": [
+                    "search"
+                ],
+                "elements": [
+                    "featured_image"
+                ],
+                "min": 1,
+                "max": 1,
+                "return_format": "object"
+            },
+            {
+                "key": "field_616d537732d25",
+                "label": "4 Links",
+                "name": "4_links",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "page"
+                ],
+                "taxonomy": "",
+                "filters": [
+                    "search"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                },
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "acf_after_title",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]
