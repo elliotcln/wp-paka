@@ -1,0 +1,29 @@
+$colors: (
+    "yellow": theme("colors.yellow"),
+    "orange": theme("colors.orange"),
+    "green": theme("colors.green"),
+    "light": theme("colors.light"),
+);
+
+.content .button {
+    @apply inline-flex flex-wrap px-4 py-2 border-2 border-dark bg-dark text-light font-title text-lg lg:text-xl xl:text-2xl text-center no-underline;
+
+    &:hover {
+        @apply underline;
+    }
+
+    @each $k, $c in $colors {
+        &.is-#{$k} {
+            border-color: #{$c};
+            background-color: #{$c};
+
+            @if $k == "yellow" {
+                @apply text-dark;
+            } @else if $k == "light" {
+                @apply text-dark;
+            } @else {
+                @apply text-light;
+            }
+        }
+    }
+}

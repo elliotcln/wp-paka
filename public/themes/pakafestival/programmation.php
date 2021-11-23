@@ -10,7 +10,7 @@ get_header(); ?>
 <main id="main-content">
     <div class="container">
         <header class="flex flex-col space-y-3 items-center pt-6 lg:pt-12">
-            <?php get_breadcrumb('dark', get_the_ID()); ?>
+            <?php get_breadcrumb(get_the_ID()); ?>
             <h1 class="text-5xl lg:text-6xl font-title text-center"><?= get_the_title(); ?></h1>
         </header>
         <section class="content pt-4 lg:pt-12 pb-12 lg:pb-24">
