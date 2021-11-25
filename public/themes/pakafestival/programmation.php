@@ -7,8 +7,9 @@
 get_header(); ?>
 
 
-<main id="main-content">
-    <div class="container">
+<main id="main-content" class="relative">
+    <div class="main-cover"></div>
+    <div class="container relative">
         <header class="flex flex-col space-y-3 items-center pt-6 lg:pt-12">
             <?php get_breadcrumb(get_the_ID()); ?>
             <h1 class="text-5xl lg:text-6xl font-title text-center"><?= get_the_title(); ?></h1>

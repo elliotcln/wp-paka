@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="main-content" role="main" class="relative">
-    <div class="absolute top-0 left-0 right-0 h-96 main-cover"></div>
+    <div class="main-cover"></div>
     <div class="container relative">
         <?php
         if (is_page()) :
