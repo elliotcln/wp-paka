@@ -59,7 +59,7 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=2400798253298763&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Facebook Pixel Code -->ƒ
+<!-- End Facebook Pixel Code -->
 <script src="<?= get_theme_file_uri('assets/app.js') ?>" async></script>
 <?php wp_footer(); ?>
 </body>
