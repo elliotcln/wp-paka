@@ -5,8 +5,8 @@ $event = tribe_get_event($event_id);
 
 $e = new stdClass();
 $e->title = $event->post_title;
-$e->start_date = tribe_get_start_date($event_id, false, 'j/n');
-$e->end_date = tribe_get_end_date($event_id, false, 'j/n');
+$e->start_date = tribe_get_start_date($event_id, false, 'j/m');
+$e->end_date = tribe_get_end_date($event_id, false, 'j/m');
 // $e->year = tribe_get_start_date($event_id, false, 'Y');
 $e->venue = tribe_get_venue_single_line_address($event_id, false);
 $e->thumbnail_url = get_the_post_thumbnail_url($event_id);
@@ -21,7 +21,7 @@ $e->programmation_link = get_field('event_programmation_link', $event_id);
             <div class="flex md:items-center md:space-x-8">
                 <img class="hidden md:block w-full max-w-xs" src="<?= $e->thumbnail_url ?>" alt="">
                 <div class="flex-shrink-0">
-                    <span class="font-semibold"><?= $e->start_date; ?> — <?= $e->end_date; ?></span>
+                    <span class="font-semibold text-xl text-orange"><?= $e->start_date; ?> — <?= $e->end_date; ?></span>
                     <span class="block font-title text-7xl lg:text-9xl max-w-xs"><?= $e->title; ?></span>
                     <p class="opacity-60 lg:text-xl"><?= $e->venue; ?></p>
                     <?php if ($e->programmation_link) : ?>

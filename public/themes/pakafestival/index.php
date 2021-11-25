@@ -1,19 +1,20 @@
 <?php get_header(); ?>
 
-<main id="main-content" role="main">
-    <div class="container">
-        <?php if (have_posts()) : while (have_posts()) : the_post();
+<main id="main-content" role="main" class="relative">
+    <div class="absolute top-0 left-0 right-0 h-96 main-cover"></div>
+    <div class="container relative">
+        <?php
+        if (is_page()) :
+            get_template_part('content/single', 'page');
 
-                if (is_page()) :
-                    get_template_part('content/single', 'page');
+        elseif (is_single()) :
+            get_template_part('content/single', get_post_type());
 
-                elseif (is_single()) :
-                    get_template_part('content/single', get_post_type());
+        elseif (is_home() && !is_front_page()) :
+            get_template_part('content/archives', get_post_type());
 
-                endif;
-
-            endwhile;
-        endif; ?>
+        endif;
+        ?>
     </div>
 </main>
 

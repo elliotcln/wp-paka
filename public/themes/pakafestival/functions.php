@@ -104,8 +104,8 @@ function informations_box($message, $display = false)
     <span>' . $message . '</span>
     </div>
     </div>';
-    
-    if($display) {
+
+    if ($display) {
         echo $box;
     } else {
         return;
@@ -126,24 +126,25 @@ function get_breadcrumb($post_ID)
 
 
     $bread .= '<ul class="' . $bread_classes . '">';
+    $bread .= '<li><a href="' . get_bloginfo('url') . '">' . get_bloginfo('title') . '</a></li>';
     $attrs = '';
     if (get_permalink(get_the_ID()) === get_the_permalink()) {
         $attrs .= 'aria-current="page"';
     }
-    if (is_page() || is_single()) {
-        $bread .= '<li><a href="' . get_bloginfo('url') . '">' . get_bloginfo('title') . '</a></li>';
+    if (is_home()) {
+        $bread .= '<li ' . $attrs . '>' . get_the_title($post_ID) . '</li>';
+    } else if (is_page() || is_single()) {
         if (get_post($post_ID)->post_parent) {
             $bread .= '<li><a href="' . get_permalink(get_post($post_ID)->post_parent) . '">' . get_the_title(get_post($post_ID)->post_parent) . '</a></li>';
         }
-        if (get_the_category($post_ID)) {
+        // if (get_the_category($post_ID)) {
 
-            $cat = get_the_category($post_ID)[0];
-            $cat_url = get_category_link($cat);
-            $bread .= '<li><a href="' . $cat_url . '">' . $cat->name . '</a></li>';
-        }
+        //     $cat = get_the_category($post_ID)[0];
+        //     $cat_url = get_category_link($cat);
+        //     $bread .= '<li><a href="' . $cat_url . '">' . $cat->name . '</a></li>';
+        // }
         $bread .= '<li ' . $attrs . '>' . get_the_title() . '</li>';
     } else if (is_category()) {
-        $bread .= '<li><a href="' . get_bloginfo('url') . '">' . get_bloginfo('title') . '</a></li>';
         $cat = get_the_category()[0];
         $bread .= '<li ' . $attrs . '>' . $cat->name . '</li>';
     }
@@ -227,7 +228,7 @@ class Social_Nav_walker extends Walker_Nav_Menu
         $href = '';
 
         $output .= '<li ' . $class_names . '>';
-        $output .= '<a href="' . $item->url . '" title="'. $title .'" target="' . $item->target . '">';
+        $output .= '<a href="' . $item->url . '" title="' . $title . '" target="' . $item->target . '">';
         if (str_contains($class_names, 'instagram')) {
             $href = 'instagram';
         } elseif (str_contains($class_names, 'facebook')) {

@@ -12,7 +12,7 @@
 
     <!-- site wrapper -->
     <div class="site-wrapper">
-        <?php informations_box('Le PAKA Festival revient du 16/7 au 17/7 2022. <a href="'. get_permalink(54) .'">Voir la programmation</a>', true); ?>
+        <?php informations_box('Le PAKA Festival revient du 16/07 au 17/07 2022. <a href="'. get_permalink(54) .'">Voir la programmation</a>', true); ?>
         <header role="banner">
             <div class="container">
                 <?php the_custom_logo(); ?>

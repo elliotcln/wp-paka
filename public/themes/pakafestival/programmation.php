@@ -13,9 +13,10 @@ get_header(); ?>
             <?php get_breadcrumb(get_the_ID()); ?>
             <h1 class="text-5xl lg:text-6xl font-title text-center"><?= get_the_title(); ?></h1>
         </header>
-        <section class="content pt-4 lg:pt-12 pb-12 lg:pb-24">
+        <section class="content pt-4 lg:pt-8 pb-12 lg:pb-24">
             <?php the_content(); ?>
-            <div class="<?= (!empty(get_the_content()) ? 'mt-4 lg:mt-8' : ''); ?> grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2 lg:gap-4">
+            <?php get_template_part('content/section', 'they-played'); ?>
+            <div class="<?= (!empty(get_the_content()) ? 'mt-4 lg:mt-12' : ''); ?> grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2 lg:gap-4">
                 <?php
                 $i = 0;
                 $cat = null;

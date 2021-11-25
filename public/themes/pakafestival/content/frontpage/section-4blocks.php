@@ -1,4 +1,4 @@
-<section class="bg-white py-8 lg:py-16">
+<section class="bg-light py-8 lg:py-16 lg:my-12">
     <div class="container grid md:grid-cols-2 gap-6 lg:gap-10">
         <div class="py-4 lg:py-8 px-7 lg:px-14">
             <?php if (get_field('hp_block-1_icon')) : ?>
@@ -10,7 +10,7 @@
             <?php endif; ?>
             <h3 class="font-bold text-2xl mt-4"><?= get_field('hp_block-1_titre'); ?></h3>
             <?php if (get_field('hp_block-1_content')) : ?>
-                <p class="mt-2 text-gray-500"><?= get_field('hp_block-1_content'); ?></p>
+                <p class="mt-2"><?= get_field('hp_block-1_content'); ?></p>
             <?php endif; ?>
         </div>
         <div class="py-4 lg:py-8 px-7 lg:px-14">
@@ -23,7 +23,7 @@
             <?php endif; ?>
             <h3 class="font-bold text-2xl mt-4"><?= get_field('hp_block-2_titre'); ?></h3>
             <?php if (get_field('hp_block-2_content')) : ?>
-                <p class="mt-2 text-gray-500"><?= get_field('hp_block-2_content'); ?></p>
+                <p class="mt-2"><?= get_field('hp_block-2_content'); ?></p>
             <?php endif; ?>
         </div>
         <div class="py-4 lg:py-8 px-7 lg:px-14">
@@ -36,7 +36,7 @@
             <?php endif; ?>
             <h3 class="font-bold text-2xl mt-4"><?= get_field('hp_block-3_titre'); ?></h3>
             <?php if (get_field('hp_block-3_content')) : ?>
-                <p class="mt-2 text-gray-500"><?= get_field('hp_block-3_content'); ?></p>
+                <p class="mt-2"><?= get_field('hp_block-3_content'); ?></p>
             <?php endif; ?>
         </div>
         <div class="py-4 lg:py-8 px-7 lg:px-14">
@@ -49,7 +49,7 @@
             <?php endif; ?>
             <h3 class="font-bold text-2xl mt-4"><?= get_field('hp_block-4_titre'); ?></h3>
             <?php if (get_field('hp_block-4_content')) : ?>
-                <p class="mt-2 text-gray-500"><?= get_field('hp_block-4_content'); ?></p>
+                <p class="mt-2"><?= get_field('hp_block-4_content'); ?></p>
             <?php endif; ?>
         </div>
     </div>

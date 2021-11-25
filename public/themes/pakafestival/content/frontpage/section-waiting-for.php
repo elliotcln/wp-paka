@@ -5,7 +5,7 @@ $ticket->content = get_field('ticket_content');
 $ticket->programmation_link = get_field('ticket_programmation_link');
 $billetterie_link = get_permalink(get_page_by_path('billetterie'));
 ?>
-<section class="pb-12">
+<section>
     <div class="container">
         <div class="event-ticket mx-auto max-w-5xl bg-dark relative overflow-hidden lg:text-lg">
             <div class="w-16 h-16 rounded-full border-r-3 border-t-3 border-dark bg-light absolute left-0 top-1/2 transform rotate-45 -translate-x-1/2 -translate-y-1/2"></div>
