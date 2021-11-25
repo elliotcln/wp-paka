@@ -133,10 +133,12 @@ function get_breadcrumb($post_ID)
     }
     if (is_home()) {
         $bread .= '<li ' . $attrs . '>' . get_the_title($post_ID) . '</li>';
-    } else if (is_page() || is_single()) {
+    } else if (is_page()) {
         if (get_post($post_ID)->post_parent) {
             $bread .= '<li><a href="' . get_permalink(get_post($post_ID)->post_parent) . '">' . get_the_title(get_post($post_ID)->post_parent) . '</a></li>';
         }
+        // $blog_id = get_option('page_for_posts');
+        // $bread .= '<li><a href="' . get_permalink($blog_id) . '">' . get_the_title($blog_id) . '</a></li>';
         // if (get_the_category($post_ID)) {
 
         //     $cat = get_the_category($post_ID)[0];
@@ -144,6 +146,10 @@ function get_breadcrumb($post_ID)
         //     $bread .= '<li><a href="' . $cat_url . '">' . $cat->name . '</a></li>';
         // }
         $bread .= '<li ' . $attrs . '>' . get_the_title() . '</li>';
+    } else if (is_single()) {
+        $blog_id = get_option('page_for_posts');
+        $bread .= '<li><a href="' . get_permalink($blog_id) . '">' . get_the_title($blog_id) . '</a></li>';
+        $bread .= '<li ' . $attrs . '>' . get_the_title($post_ID) . '</li>';
     } else if (is_category()) {
         $cat = get_the_category()[0];
         $bread .= '<li ' . $attrs . '>' . $cat->name . '</li>';
