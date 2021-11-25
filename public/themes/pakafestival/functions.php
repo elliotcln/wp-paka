@@ -235,11 +235,11 @@ class Social_Nav_walker extends Walker_Nav_Menu
 
         $output .= '<li ' . $class_names . '>';
         $output .= '<a href="' . $item->url . '" title="' . $title . '" target="' . $item->target . '">';
-        if (str_contains($class_names, 'instagram')) {
+        if (strpos($class_names, 'instagram')) {
             $href = 'instagram';
-        } elseif (str_contains($class_names, 'facebook')) {
+        } elseif (strpos($class_names, 'facebook')) {
             $href = 'facebook';
-        } elseif (str_contains($class_names, 'youtube')) {
+        } elseif (strpos($class_names, 'youtube')) {
             $href = 'youtube';
         }
         $output .= '<svg aria-hidden="true" class="icon h-6 w-6 text-yellow-300"><use xlink:href="#' . $href . '" /></svg>';
