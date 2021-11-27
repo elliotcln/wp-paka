@@ -6,9 +6,9 @@
                 <div id="mc_embed_signup_scroll">
 
                     <div class="mc-field-group">
-                        <label for="mce-EMAIL" class="font-medium text-lg lg:text-xl text-white">Inscris-toi à notre newsletter pour ne rien râter des prochains événements !</label>
+                        <label for="mce-EMAIL" class="font-medium text-lg lg:text-xl text-white">Inscrivez-vous à notre newsletter pour ne rien râter des prochains événements !</label>
                         <div class="flex bg-white mt-4 p-1">
-                            <input type="email" value="" name="EMAIL" class="required email font-medium lg:text-lg w-full p-2" id="mce-EMAIL" placeholder="Ton adresse email ...">
+                            <input type="email" value="" name="EMAIL" class="required email border-0 font-medium lg:text-lg w-full p-2" id="mce-EMAIL" placeholder="Votre adresse email ...">
                             <!-- <input type="submit" value="Subscribe" name="subscribe"  class="p-2 bg-orange font-medium text-white"> -->
                             <button type="submit" id="mc-embedded-subscribe" class="flex items-center space-x-2 px-4 py-3 bg-yellow hover:bg-green text-dark font-medium lg:text-lg">
                                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5">

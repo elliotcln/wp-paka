@@ -15,10 +15,10 @@
       <div class="lg:ml-24">
         <div class="flex justify-center lg:justify-start space-x-4 mb-4">
           <a href="https://www.morbihan.fr/" target="_blank" title="Conseil départemental du Morbihan (nouvelle fenêtre)">
-            <img class="h-14" src="<?= get_template_directory_uri(); ?>/assets/images/logos/logo-morbihan.svg" alt="Conseil départemental du Morbihan">
+            <img class="h-16 lg:h-20" src="<?= get_template_directory_uri(); ?>/assets/images/logos/logo-morbihan.svg" alt="Conseil départemental du Morbihan">
           </a>
           <a href="https://www.la-trinite-sur-mer.fr/" target="_blank" title="La Trinité-sur-mer (nouvelle fenêtre)">
-            <img class="h-14" src="<?= get_template_directory_uri(); ?>/assets/images/logos/logo-trinitesurmer.svg" alt="La Trinité-sur-mer">
+            <img class="h-16 lg:h-20" src="<?= get_template_directory_uri(); ?>/assets/images/logos/logo-trinitesurmer.svg" alt="La Trinité-sur-mer">
           </a>
         </div>
         <p class="text-sm text-center">Festival soutenu par le Conseil Départemental du Morbihan</p>

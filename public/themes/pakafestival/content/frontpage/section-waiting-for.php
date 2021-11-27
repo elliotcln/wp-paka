@@ -23,7 +23,7 @@ $billetterie_link = get_permalink(get_page_by_path('billetterie'));
                     </a>
                 </div>
                 <div class="right-ticket flex-shrink-0 border-3 border-dark bg-light md:w-1/2 lg:w-2/5 flex items-center justify-center p-8 pt-12 md:p-12 lg:p-14">
-                    <a href="<?= $billetterie_link; ?>" class="border-3 border-orange px-6 py-5 text-orange font-medium text-center flex items-center space-x-2">
+                    <a href="<?= $billetterie_link; ?>" class="w-full lg:w-auto border-3 border-orange px-6 py-5 text-orange font-medium text-center flex items-center justify-center space-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-6 w-6 transform -rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
                         </svg>
@@ -36,16 +36,18 @@ $billetterie_link = get_permalink(get_page_by_path('billetterie'));
         <!--  -->
         <?php
         $links = get_field('4_links');
+        if ($links) :
         ?>
-        <div class="md:flex md:justify-center flex-wrap my-3 mx-auto max-w-5xl mt-4 md:mt-8">
-            <?php foreach ($links as $k => $link) : ?>
-                <div class="px-2 py-8 lg:py-16 md:w-1/2 text-center">
-                    <h2>
-                        <?= $link->post_title ?>
-                    </h2>
-                    <a href="<?= get_page_uri($link->ID); ?>" class="font-medium text-orange"><span class="sr-only"><?= $link->post_title; ?> -</span> En savoir plus</a>
-                </div>
-            <?php endforeach; ?>
-        </div>
+            <div class="md:flex md:justify-center flex-wrap my-3 mx-auto max-w-5xl mt-4 md:mt-8">
+                <?php foreach ($links as $k => $link) : ?>
+                    <div class="px-2 py-8 lg:py-16 md:w-1/2 text-center">
+                        <h2>
+                            <?= $link->post_title ?>
+                        </h2>
+                        <a href="<?= get_page_uri($link->ID); ?>" class="font-medium text-orange"><span class="sr-only"><?= $link->post_title; ?> -</span> En savoir plus</a>
+                    </div>
+            <?php endforeach;
+            endif; ?>
+            </div>
     </div>
 </section>

@@ -16,16 +16,21 @@ get_header(); ?>
         </header>
         <section class="content pt-4 lg:pt-8 pb-12 lg:pb-24">
             <?php the_content(); ?>
-            <?php get_template_part('content/section', 'they-played'); ?>
+            <?php
+            $i = 0;
+            $cat = null;
+            if (get_the_ID() == 54) {
+                $cat = 'pour-les-grands';
+                get_template_part('content/section', 'they-played');
+            } else if (get_the_ID() == 54) {
+                $cat = 'pour-les-petits';
+                get_template_part('content/section', 'they-played');
+            } else {
+                $cat = null;
+            }
+            ?>
             <div class="<?= (!empty(get_the_content()) ? 'mt-4 lg:mt-12' : ''); ?> grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2 lg:gap-4">
                 <?php
-                $i = 0;
-                $cat = null;
-                if (get_the_ID() == 54) {
-                    $cat = 'pour-les-grands';
-                } else {
-                    $cat = 'pour-les-petits';
-                }
 
                 $artists = new WP_Query(array(
                     'post_type' => 'artists',

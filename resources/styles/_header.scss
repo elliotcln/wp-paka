@@ -36,7 +36,8 @@ input[type="checkbox"]:checked + #main-navigation {
 
         &.current_page_item > a,
         &.current-menu-item > a,
-        &.current_page_ancestor > a {
+        &.current_page_ancestor > a,
+        &.current-menu-ancestor > a {
             @apply text-orange;
         }
 
@@ -86,7 +87,8 @@ input[type="checkbox"]:checked + #main-navigation {
 
             &.current_page_item,
             &.current-menu-item,
-            &.current-page-parent {
+            &.current-page-parent,
+            &.current-menu-ancestor {
                 @apply bg-yellow border-dark text-dark;
             }
             &.current_page_ancestor > a,

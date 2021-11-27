@@ -15,6 +15,7 @@
   ],
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.1",
+    "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/typography": "^0.4.1",
     "mix-tailwindcss": "^1.3.0",
     "resolve-url-loader": "^4.0.0",
