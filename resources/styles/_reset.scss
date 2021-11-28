@@ -37,10 +37,11 @@ iframe {
     background-image: url(assets/images/topography.svg);
     @apply absolute top-0 left-0 right-0 max-h-96 h-full;
 
-    &::after {
-        content: '';
-        @apply absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-light to-transparent;
-    }
+    // &::after {
+    //     content: '';
+    //     @apply absolute bottom-0 left-0 right-0 h-1/2;
+    //     background-image: linear-gradient(to top, theme('colors.light'), rgba(0, 0, 0, 0));
+    // }
 }
 
 .leaflet-container {

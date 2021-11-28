@@ -2,7 +2,7 @@
     <div class="container">
         <!-- Begin Mailchimp Signup Form -->
         <div id="mc_embed_signup" class="mx-auto max-w-lg">
-            <form action="https://gmail.us20.list-manage.com/subscribe/post?u=af6608376fab4c0f1b2c1edc0&amp;id=7acef5821e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <form action="https://pakafestival.us20.list-manage.com/subscribe/post?u=31699003541de8ccfdfeb5329&amp;id=ee175c25f3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
 
                     <div class="mc-field-group">
@@ -23,11 +23,10 @@
                         <div class="response" id="mce-error-response" style="display:none"></div>
                         <div class="response" id="mce-success-response" style="display:none"></div>
                     </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_af6608376fab4c0f1b2c1edc0_7acef5821e" tabindex="-1" value=""></div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_31699003541de8ccfdfeb5329_ee175c25f3" tabindex="-1" value=""></div>
                 </div>
             </form>
         </div>
-
         <!--End mc_embed_signup-->
     </div>
 </section>
