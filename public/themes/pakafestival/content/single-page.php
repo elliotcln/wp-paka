@@ -25,13 +25,13 @@
 
     // is child
     if (empty($children)) : ?>
-        <main class="mx-auto max-w-5xl lg:px-16 xl:px-24 content pt-4 lg:pt-8 pb-12 lg:pb-24">
+        <div class="mx-auto max-w-5xl lg:px-16 xl:px-24 content pt-4 lg:pt-8 pb-12 lg:pb-24">
             <?php the_content(); ?>
-        </main>
+        </div>
     <?php
     // is parent
     else : ?>
-        <main class="mx-auto max-w-5xl lg:px-16 xl:px-24 content pt-4 lg:pt-12 pb-12 lg:pb-24">
+        <div class="mx-auto max-w-5xl lg:px-16 xl:px-24 content pt-4 lg:pt-12 pb-12 lg:pb-24">
             <div class="grid md:grid-cols-2 gap-6">
                 <?php foreach ($children as $c) : ?>
                     <div class="text-center border-3 border-dark p-4">
@@ -40,7 +40,7 @@
                     </div>
                 <?php endforeach; ?>
             </div>
-        </main>
+        </d>
     <?php endif; ?>
 
 </article>
